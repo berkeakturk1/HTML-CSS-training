@@ -12,6 +12,7 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid blue;
+  position: relative;
 }
 
 .container {
@@ -19,6 +20,7 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+  /* position: relative; */
 }
 
 .main-header {
@@ -33,6 +35,7 @@ body {
 
 .post-header {
   margin-bottom: 30px;
+  /* position: relative; */
 }
 
 nav {
@@ -182,6 +185,48 @@ nav a:link {
 
 nav a:link:last-child {
   margin-right: 0px;
+}
+
+button {
+  font-size: 20px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h2::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+  font-size: 200px;
+} */
+
+/* h3 + p::first-line {
+  color: red;
+} */
+
+h2 {
+  position: relative;
+  /* background-color: orangered; */
+}
+
+h2::after {
+  color: black;
+  content: "TOP";
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -20px;
+  right: -10px;
 }
 
 .code-img {
